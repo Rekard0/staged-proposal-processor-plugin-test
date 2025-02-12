@@ -17,11 +17,10 @@ jobs:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org/'
 
-      - name: Install Foundry (forge)
-        run: |
-          curl -L https://foundry.paradigm.xyz | bash
-          source ~/.bashrc
-          foundryup
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
 
       - name: Configure NPM for Scoped Package
         run: |
