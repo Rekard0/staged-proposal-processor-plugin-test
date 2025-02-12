@@ -17,10 +17,14 @@ jobs:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org/'
 
-      - name: Install Foundry
+      - name: Install Foundry (forge)
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
+
+      - name: Install forge-std
+        run: |
+          forge install foundry-rs/forge-std
 
       - name: Configure NPM for Scoped Package
         run: |
