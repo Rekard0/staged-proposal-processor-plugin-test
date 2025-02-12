@@ -1,6 +1,6 @@
 {
-  "name": "@rekard0/test-staged-proposal-processor-plugin-artifacts",
-  "author": "Aragon X",
+  "name": "@rekard0-test/test-staged-proposal-processor-plugin-artifacts",
+  "author": "rekard0 X",
   "version": "1.1.0",
   "license": "AGPL-3.0-or-later",
   "description": "The ABI definition of the Staged Proposal Processor plugin",
